@@ -57,14 +57,14 @@ export default class MenuBuilder {
       label: 'Mongo Lens',
       submenu: [
         {
-          label: 'About ElectronReact',
+          label: 'About Mongo Lens',
           selector: 'orderFrontStandardAboutPanel:',
         },
         { type: 'separator' },
         { label: 'Services', submenu: [] },
         { type: 'separator' },
         {
-          label: 'Hide ElectronReact',
+          label: 'Hide Mongo Lens',
           accelerator: 'Command+H',
           selector: 'hide:',
         },
