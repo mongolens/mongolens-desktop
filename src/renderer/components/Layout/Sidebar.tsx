@@ -4,18 +4,10 @@ const Sidebar: React.FC = () => {
   return (
     <div
       id="sideBar"
-      className="relative flex flex-col flex-wrap bg-white border-r border-gray-300 p-6 flex-none w-64 md:-ml-64 md:fixed md:top-0 md:z-30 md:h-screen md:shadow-xl animated faster"
+      className="relative flex flex-col flex-wrap bg-white border-r border-gray-300 p-6 flex-none w-64 h-screen shadow-xl mt-12"
     >
       {/* sidebar content */}
       <div className="flex flex-col">
-        {/* sidebar toggle */}
-        <div className="text-right hidden md:block mb-4">
-          <button id="sideBarHideBtn">
-            <i className="fad fa-times-circle"></i>
-          </button>
-        </div>
-        {/* end sidebar toggle */}
-
         <p className="uppercase text-xs text-gray-600 mb-4 tracking-wider">homes</p>
 
         {/* link */}
