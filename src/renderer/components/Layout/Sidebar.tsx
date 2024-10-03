@@ -154,11 +154,11 @@ const TableItem: React.FC<TableItemProps> = ({ name, indexes }) => {
   return (
     <div>
       <div className="flex items-center mb-1">
-        <i className="fad fa-table text-xs mr-2"></i>
+        <i className="fad fa-file-alt text-xs mr-2"></i>
         <span className="capitalize font-medium text-sm hover:text-teal-600 transition duration-500">
           {name}
         </span>
-        <button 
+        <button
           className="ml-auto text-xs text-gray-400 hover:text-teal-600"
           onClick={() => setIsOpen(!isOpen)} // Göz ikonuna tıklandığında indexleri göster
         >
@@ -169,8 +169,11 @@ const TableItem: React.FC<TableItemProps> = ({ name, indexes }) => {
         <div className="ml-4">
           {indexes.map((index) => (
             <div key={index.name} className="flex items-center mb-1">
-              <i className={`fad fa-${index.isPrimary ? 'key' : 'tag'} text-xs mr-2`}></i>
-              <span className="text-xs text-gray-600">{index.name}</span> {/* Daha küçük karakter */}
+              <i
+                className={`fad fa-${index.isPrimary ? 'key' : 'tag'} text-xs mr-2`}
+              ></i>
+              <span className="text-xs text-gray-600">{index.name}</span>{' '}
+              {/* Daha küçük karakter */}
             </div>
           ))}
         </div>
